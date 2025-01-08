@@ -60,3 +60,9 @@ body {
 .subtitulos{
     color: black;
 }
+#perfil-personal{
+    text-align: justify!important;
+}
+strong{
+    color: rgb(26, 26, 26);
+}
