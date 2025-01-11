@@ -1,79 +1,133 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f7f7f7; /* Fondo claro y minimalista */
+    color: #333; /* Texto principal en gris oscuro */
     padding: 20px;
 }
+
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background: #fff;
+    background: #ffffff; /* Fondo blanco para contraste */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
+/* Header */
 .header {
     grid-column: span 2;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .header img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     filter: grayscale(100%);
     object-fit: cover;
-    /* border: 1px solid #000000; */
-    transition: all 0.8s;
+    transition: all 0.4s;
 }
-.header img:hover{
+
+.header img:hover {
     filter: grayscale(0%);
     border-radius: 50%;
-    border: 3px solid #ffffff;
+    border: 3px solid #4F7CAC; /* Azul pastel */
+    transition: all 0.4s;
+}
 
-    width: 250px;
-    height: 250px;
-    transition: all 0.8s;
+.titulo {
+    font-weight: bold;
+    color: #4F7CAC; /* Azul pastel para el título */
+    margin-top: 15px;
+    font-size: 35px;
+    border-radius: 20px;
+    transition: all 0.2s;
 }
-.header h1 {
-    margin: 10px 0;
-    font-size: 2rem;
+
+.titulo:hover {
+    background-color: #d9eaf1; /* Azul claro suave al hover */
+    transition: all 0.2s;
 }
-.section {
-    margin-bottom: 20px;
+
+/* Grid y elementos */
+.grid {
+    width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
-.section h2 {
-    font-size: 1.5rem;
+
+.grid-item {
+    background: #f9f9f9; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulos {
+    font-size: 1.2em;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ddd;
+    color: #4F7CAC; /* Azul pastel */
+    border-bottom: 2px solid #d9eaf1; /* Línea decorativa */
     display: inline-block;
 }
-.section p, .section ul {
-    margin-left: 20px;
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
 }
-.section ul {
-    list-style: square;
+
+ul li {
+    margin-bottom: 5px;
+    color: #555; /* Texto gris oscuro */
 }
-.titulo{
-    font-weight: bold;
-    color: black;
-    font-size: 40px!important;
+
+/* Secciones específicas */
+#perfil-personal {
+    text-align: justify;
 }
-.subtitulos{
-    color: black;
+
+strong {
+    color: #333; /* Texto resaltado en gris oscuro */
 }
-#perfil-personal{
-    text-align: justify!important;
+
+/* Contacto */
+.grid-item#contacto p {
+    color: #666; /* Gris medio */
 }
-strong{
-    color: rgb(26, 26, 26);
+
+/* Efectos generales */
+.grid-item:hover {
+    background-color: #eaf4f8; /* Fondo azul claro al hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
+    transition: all 0.3s;
+}
+
+/* Imagen de perfil */
+.perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Descripción */
+.descripcion {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555; /* Texto gris oscuro */
 }
