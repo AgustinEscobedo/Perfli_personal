@@ -7,18 +7,22 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Fondo negro elegante */
-    color: #E0E0E0; /* Texto gris claro */
+    background-color: #121212;
+    /* Fondo negro elegante */
+    color: #E0E0E0;
+    /* Texto gris claro */
     padding: 20px;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background: #1E1E1E; /* Fondo gris oscuro */
+    background: #1E1E1E;
+    /* Fondo gris oscuro */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    /* Sombra elegante */
     display: grid;
     gap: 20px;
 }
@@ -55,22 +59,22 @@ body {
     width: 60%;
     text-align: justify;
     font-size: 14px;
-    color: #A0A0A0; 
+    color: #A0A0A0;
     margin: 10px auto;
     overflow: hidden;
-    line-height: 1.5; 
+    line-height: 1.5;
     padding: 30px;
-    max-height: 30px; 
-    transition: all 0.5s ;
+    max-height: 30px;
+    transition: all 0.5s;
 }
 
 .descripcion:hover {
-    background-color:#121212;
+    background-color: #121212;
     border-radius: 20px;
     /* font-weight: bold; */
     padding: 30px;
-    max-height: 400px; 
-    line-height: 1.5; 
+    max-height: 400px;
+    line-height: 1.5;
     transition: all 0.5s;
 }
 
@@ -82,7 +86,8 @@ body {
 }
 
 .grid-item {
-    background: #1A1A1A; /* Fondo ligeramente más oscuro */
+    background: #1A1A1A;
+    /* Fondo ligeramente más oscuro */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -109,14 +114,28 @@ ul {
 
 ul li {
     margin-bottom: 10px;
-    color: #CCCCCC; /* Texto gris claro */
+    color: #CCCCCC;
+    /* Texto gris claro */
 }
 
 strong {
-    color: #FFFFFF; /* Resaltar texto */
+    color: #FFFFFF;
+    /* Resaltar texto */
 }
 
 /* Contacto */
 .grid-item#contacto p {
     color: #CCCCCC;
+}
+
+@media screen and (max-width: 768px) {
+    .descripcion:hover {
+        background-color: #121212;
+        border-radius: 20px;
+        font-size: 12px;
+        padding: 14px;
+        max-height: 437px;
+        line-height: 1.5;
+        transition: all 0.5s;
+    }
 }
